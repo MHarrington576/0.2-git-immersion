@@ -1,8 +1,10 @@
 <html>
   <body>
     <span>Hello, World</span>
+    require 'greeter'
     <!--Default is "World"-->
     <name = ARGV.first || "World">
-    <puts "Hello, #{name}!"
+    <greeter = Greeter.new(name)>
+    <puts greeter.greet>
   </body>
 </html>
